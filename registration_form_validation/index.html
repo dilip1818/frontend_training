@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Form Validation using JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+        <form action="" class="form">
+            <div class="form-group name">
+                <label for="">UserName : </label>
+                <input type="text" placeholder="username" id="username">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group email">
+                <label for="">Email : </label>
+                <input type="text" placeholder="email" id="email">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group phone-number">
+                <label for="">Phone Number : </label>
+                <input type="text" placeholder="phonenumber" id="phonenumber">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group password">
+                <label for="">Password : </label>
+                <input type="password" placeholder="password" id="password">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group c-password">
+                <label for="">Confirm Password : </label>
+                <input type="password" placeholder="confirm password" id="confirmpassword">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group gender ">
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+                <span></span>
+            </div>
+            <div class="form-group dob">
+                <label for="date-of-birth">Date Of Birth (DOB)</label>
+                <input type="date" id="date">
+                <span></span>
+            </div>
+            <div class="form-group skill">
+                <label for="skills">Skills</label>
+                <input type="checkbox" class="skills" value="python">PYTHON
+                <input type="checkbox" class="skills" value="java">JAVA
+                <input type="checkbox" class="skills" value="c++">C++
+                <span></span>
+            </div>
+            <div class="form-group country">
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="">Select City</option>
+                    <option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="Canada">Canada</option>
+                    <option value="NewYork">NewYork</option>
+                </select>
+            </div>
+            <button id='submit'>Submit</button>
+            <input id="reset" type="Reset" value="Reset">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
