@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  .container .navigation-bar {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+   
+  }
+  
+  .navigation-head {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #2564cf;
+    padding: 10px;
+  }
+  .search-task {
+    background-color: #ffffff;
+    margin: 0px 190px ;
+    border-radius: 5px ;
+  }
+  .head-search {
+    height: 4vh;
+    width: 20vw;
+  }
+  .side-bar-list-creation {
+    height: 5vh;
+    width: 10vw;
+    background-color: transparent;
+  }
+  label {
+    color: #2564cf;
+  }
+  input[type = "search"] {
+    cursor: pointer; 
+    outline: none;
+    padding: 3px ;
+    position: absolute;
+    border: none;
+    
+  }
+
+#navigation-right {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3.4fr;
+    font-size: .85rem;
+}
+.side-bar-head {
+    margin-top: 20px;
+    padding: 0px 24px;
+}
+
+.list-item {
+    padding: 12px 24px;
+
+}
+.side-bar-options:hover{
+  cursor: pointer;
+  background-color: #eff6fc;
+}
+.side-bar {
+  display: grid;
+  grid-template-rows: 1fr 9.6fr 1fr;
+}
+.main-right {
+    background-color: #faf9f8;
+    display: grid;
+    grid-template-rows: .2fr .1fr;
+}
+.list-item-headding {
+    margin-left: 16px;
+}
+.side-bar-horizontal-line {
+    margin: 9px 16px;
+    border: 1px solid #e1dfdd;
+}
+.add-newlist {
+    padding: 12px 0px 12px 24px;
+    color: #2564cf;
+ 
+}
+.group {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    color: #2564cf;
+}
+
+  input[type = "text"] {
+    outline: none;
+      border: none;
+      padding: 5px;
+  }
+.create-group,
+.options {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.side-bar-items {
+display: flex;
+align-items: center;
+}
+
+.side-bar-footer {
+  display: grid; 
+  grid-template-columns: repeat(5,1fr);
+}
+.taskToolBar {
+  color: #2564cf;
+  display: grid;
+  grid-template-columns: 5fr .1fr ;
+
+}
+
+.mainTittle {
+  margin: 16px 24px;
+}
+.main-headding {
+  padding: 6px 8px;
+  font-size: 1.3rem;
+}
+.filter {
+  padding: 6px 8px;
+  font-weight: 100;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  padding: 11px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: #ffffff;
+}
+ul li:hover {
+  background-color: #f5f5f5;
+}
+.in-Completed::before {
+  content: "radio_button_unchecked";
+  color: rgb(37, 100, 207);
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 20px;
+}
+.completed::before   {
+  content: "check_circle";  
+  position: absolute;
+  font-size: 20px;
+}
+.in-Completed:hover::before {
+  content: "check_circle";  
+  position: absolute;
+  font-size: 20px;
+}
+
+
+ul li.checked {
+  text-decoration: line-through;
+}
+.un-important::before {
+  content: '\2606';
+  color: #2564cf;
+  position: absolute;
+  font-size: 24px;
+  right: 5%;
+  top: -20%;
+  padding: 11px 16px;
+}
+
+.important::before {
+  content: '\2605';
+  color: #2564cf;
+  position: absolute; 
+  right: 5%;
+  top: -20%;
+  padding: 11px 16px;
+}
+.task-input {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e9e8e7;
+  border-radius: 2px;
+}
+.task-entry {
+  height: 5vh;
+  width: 60vw;
+}
+.main-bottom {
+  padding: 0px 20px;
+  
+
+}
+.task-information {
+  box-shadow: 1px 1px 1px 1px #e9e8e7;
+  border-radius: 5px;
+}
+
+ ::placeholder {
+  color: #2564cf;
+}
+#add-button {
+  padding:  8px;
+  margin: auto;
+  color: #a19f9d;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #a19f9d;
+}
+#add-button:hover {
+  color: #2564cf;
+}
+.add-task {
+ margin-left: 700px;
+ align-self: center;
+}
+.task-addtional-options {
+  padding: 4px;
+  display: grid;
+  justify-items: center;
+}
+.task-addtional-options:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.application-name:hover {
+  cursor: pointer;
+  border-bottom: solid;
+}
+.task-options {
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  padding: 10px 20px;
+  background-color: #faf9f8;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #ffffff;
+  box-shadow: 1px 1px 1px 1px #e9e8e7;
+  font-size: 14px;
+  list-style-type: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-content: center;
+}
+ul {
+   padding:20px 
+  } 
+#myUL {
+  height: 63vh;
+  overflow-y: scroll;
+}
+.unicode-icon {
+  font-size: 20px;
+  
+}
